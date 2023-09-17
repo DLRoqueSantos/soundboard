@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Soundboard - DS</title>
+      <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600,700|Exo+2:400,500,600,700" rel="stylesheet">
+      <link href="css/fontawesome-all.css" rel="stylesheet">
+      <!-- icons css link -->
+      <link rel="stylesheet" href="css/normalize.css">
+      <!-- resets the browser default css-->
+      <link rel="stylesheet" href="css/master.css">
+   </head>
+   <body>
+      <header>
+         <!-- contains the logo and navigation. The fixed position, dropshadow and background color are defined in here -->
+         <nav>
+            <!-- this container is used to align the content inside in the page centered and with margins -->
+            <ul id="navigation" role="navigation">
+               <li id="site_logo"><img src="img/logo.png" alt="Logo"></li>
+               <li><a data-instrument="drums" href="#">Drums</a></li>
+               <li><a data-instrument="violin" href="#">Violin</a></li>
+               <li><a data-instrument="piano" href="#">Piano</a></li>
+            </ul>
+         </nav>
+      </header>
+      <span id="instrument_selected">drum</span>
+      <div id="container">
+         <!-- Section 1 / Drums -->
+         <section class="items" id="drums">
+            <h1>Drums</h1>
+            <h2>Description</h2>
+            <p>Play drums online with touch, mouse or keyboard.</p>
+            <p>Percussion group with a few parts of a drum set where you can play around with your keyboard or mouse. Enjoy the tunes :)</p>
+            <ul>
+               <li><a data-sound="drum1" class="sound">Play</a> <span>Cymbal</span> <span class="key">1</span></li>
+               <li><a data-sound="drum2" class="sound">Play</a> <span>High Tom Tom</span> <span class="key">2</span></li>
+               <li><a data-sound="drum3" class="sound">Play</a> <span>Floor Tom Tom</span> <span class="key">3</span></li>
+               <li><a data-sound="drum4" class="sound">Play</a> <span>Snare Drum</span> <span class="key">4</span></li>
+               <li><a data-sound="drum5" class="sound">Play</a> <span>Bass Drum</span> <span class="key">5</span></li>
+            </ul>
+         </section>
+         <!-- Section 2 / Violin -->
+         <section class="items" id="violin">
+            <h1>Violin</h1>
+            <h2>Description</h2>
+            <p>Play violin online with touch, mouse or keyboard.</p>
+            <p>Orchestral Instrumental samples of a Violin playing single notes with an Tenuto attack and an Vibrato sustain. Enjoy the tunes :)</p>
+            <ul>
+               <li><a data-sound="violin1" class="sound">Play</a> <span>G4</span> <span class="key">1</span></li>
+               <li><a data-sound="violin2" class="sound">Play</a> <span>D5</span> <span class="key">2</span></li>
+               <li><a data-sound="violin3" class="sound">Play</a> <span>A4</span> <span class="key">3</span></li>
+               <li><a data-sound="violin4" class="sound">Play</a> <span>E5</span> <span class="key">4</span></li>
+               <li><a data-sound="violin5" class="sound">Play</a> <span>F5</span> <span class="key">5</span></li>
+            </ul>
+         </section>
+         <!-- Section 3 / Piano -->
+         <section class="items" id="piano">
+            <h1>Piano</h1>
+            <h2>Description</h2>
+            <p>Play piano online with touch, mouse or keyboard.</p>
+            <p>Acoustic sounds of a piano where you can play using your keyboard or mouse. Enjoy the tunes :)</p>
+            <ul>
+               <li><a data-sound="piano1" class="sound">Play</a> <span>C3</span> <span class="key">1</span></li>
+               <li><a data-sound="piano2" class="sound">Play</a> <span>D3</span> <span class="key">2</span></li>
+               <li><a data-sound="piano3" class="sound">Play</a> <span>A3</span> <span class="key">3</span></li>
+               <li><a data-sound="piano4" class="sound">Play</a> <span>C4</span> <span class="key">4</span></li>
+               <li><a data-sound="piano5" class="sound">Play</a> <span>C5</span> <span class="key">5</span></li>
+            </ul>
+         </section>
+      </div>
+      <footer>
+         <p>&copy;2018 / POWERED BY DS</p>
+      </footer>
+
+      <!-- Drum Sounds elements  -->
+      <audio data-sound="drum1" src="sounds/drum/1.wav"></audio>
+      <audio data-sound="drum2" src="sounds/drum/2.wav"></audio>
+      <audio data-sound="drum3" src="sounds/drum/3.wav"></audio>
+      <audio data-sound="drum4" src="sounds/drum/4.wav"></audio>
+      <audio data-sound="drum5" src="sounds/drum/5.wav"></audio>
+
+      <!-- Violin Sounds elements -->
+      <audio data-sound="violin1" src="sounds/violin/1.wav"></audio>
+      <audio data-sound="violin2" src="sounds/violin/2.wav"></audio>
+      <audio data-sound="violin3" src="sounds/violin/3.wav"></audio>
+      <audio data-sound="violin4" src="sounds/violin/4.wav"></audio>
+      <audio data-sound="violin5" src="sounds/violin/5.wav"></audio>
+
+      <!-- Piano Sounds elements -->
+      <audio data-sound="piano1" src="sounds/piano/1.wav"></audio>
+      <audio data-sound="piano2" src="sounds/piano/2.wav"></audio>
+      <audio data-sound="piano3" src="sounds/piano/3.wav"></audio>
+      <audio data-sound="piano4" src="sounds/piano/4.wav"></audio>
+      <audio data-sound="piano5" src="sounds/piano/5.wav"></audio>
+
+      <script src="js/myscripts.js" type="text/javascript"></script>
+   </body>
+</html>
